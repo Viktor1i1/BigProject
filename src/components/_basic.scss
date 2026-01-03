@@ -1,0 +1,69 @@
+@use "/src/components/mixin" as mixin;
+@use "/src/components/variables" as styles;
+
+@use "/src/components/buttons";
+h1 {
+    @include mixin.font(styles.$font-semibold, 35px, styles.$dark-3-pr4-color);
+}
+
+h2 {
+    @include mixin.font(styles.$font-medium, 33px, styles.$dark-2-pr4-color);
+}
+//h3 {
+    //@include mixin.font(styles.$font-semibold, 27px, styles.$dark-3-pr4-color);
+//}
+h4 {
+    @include mixin.font(styles.$font-medium, 22px, styles.$dark-3-pr4-color);
+}
+
+h5 {
+    @include mixin.font(styles.$font-medium, 17px, styles.$dark-3-pr4-color);
+}
+
+h6 {
+    @include mixin.font(styles.$font-medium, 15px, styles.$dark-3-pr4-color);
+}
+
+//body{
+   // @include mixin.themes();
+//}
+
+
+
+
+
+
+
+
+ul.list{////список з галочками
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:before{
+            content:""; 
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: styles.$pr-main-color;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        &:after{
+            content: "";
+            display: block;
+            width: 5px;
+            height: 3px;
+            border: solid 1px #fff;
+            border-width: 0 0 2px 2px;
+            transform: rotate(-45deg);
+            position: absolute;
+            left: 4px;
+        }
+    }
+}

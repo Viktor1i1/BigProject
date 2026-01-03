@@ -1,0 +1,510 @@
+@use "/src/components/mixin" as mixin;
+@use "/src/components/variables" as styles;
+
+button.order-btn-fill,////1
+input.order-btn-fill
+{
+    //@include mixin.button-fill(220px,styles.$pr-color-2);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    text-transform: uppercase;
+}
+
+button.order-btn-fill:hover,
+input.order-btn-fill:hover
+{
+    background-color: styles.$light-1-pr2-color;
+    cursor: pointer;
+}
+
+
+button.order2-btn-fill,///2
+input.order2-btn-fill
+{
+    ///@include mixin.button-fill(220px,styles.$light-1-pr2-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    text-transform: uppercase;
+}
+
+button.order2-btn-fill:hover,
+input.order2-btn-fill:hover
+{
+    background-color: styles.$light-2-pr2-color;
+    cursor: pointer;
+}
+
+
+button.order3-btn-fill:hover,///3
+input.order-btn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.order3-btn-fill,
+input.order-btn-fill
+{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    //@include mixin.button-fill(220px,styles.$light-1-pr2-color);
+    background-color: styles.$light-2-pr4-color;
+}
+
+
+
+
+
+/////////////2 COLUMN
+button.or-btn-fill,////1
+input.or-btn-fill
+{
+    //@include mixin.button-fill(240px,styles.$pr-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.or-btn-fill:hover,
+input.or-btn-fill:hover
+{
+    background-color: styles.$light-1-main-color;
+    cursor: pointer;
+}
+
+
+button.or2-btn-fill,///2
+input.or2-btn-fill
+{
+    //@include mixin.button-fill(240px,styles.$light-2-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.or2-btn-fill:hover,
+input.or2-btn-fill:hover
+{
+    background-color: styles.$light-3-main-color;
+    cursor: pointer;
+}
+
+
+
+button.or3-btn-fill:hover,///3
+input.or3-btn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.or3-btn-fill,
+input.or3-btn-fill{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    //@include mixin.button-fill(240px,styles.$light-1-pr2-color);
+    background-color: styles.$light-2-pr4-color;
+}
+
+
+
+
+
+/////////////3 COLUMN
+button.ord-btn-fill,////1
+input.ord-btn-fill
+{
+    //@include mixin.button-fill(180px,styles.$pr-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.ord-btn-fill:hover,
+input.ord-btn-fill:hover
+{
+    background-color: styles.$light-1-main-color;
+    cursor: pointer;
+}
+
+
+button.ord2-btn-fill,///2
+input.ord2-btn-fill
+{
+    //@include mixin.button-fill(180px,styles.$light-2-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.ord2-btn-fill:hover,
+input.ord2-btn-fill:hover
+{
+    background-color: styles.$light-3-main-color;
+    cursor: pointer;
+}
+
+
+
+button.ord3-btn-fill:hover,///3
+input.ord3-btn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.ord3-btn-fill,
+input.ord3-btn-fill{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    @include mixin.button-fill(180px,styles.$light-1-pr2-color);
+    background-color: styles.$light-2-pr4-color;
+}
+
+
+
+
+
+/////////////4 COLUMN
+button.prime-btn-fill,////1
+input.prime-btn-fill
+{
+    @include mixin.button-fill(180px,styles.$light);
+    border: 1px solid styles.$pr-color-2;
+    @include mixin.font(styles.$font-semibold,14px,styles.$pr-main-color-2);
+}
+button.prime-btn-fill:hover,
+input.prime-btn-fill:hover
+{
+    background-color: rgb(183, 183, 183);
+    cursor: pointer;
+}
+
+
+button.prime2-btn-fill,///2
+input.prime2-btn-fill
+{
+    @include mixin.button-fill(180px,styles.$pr-color-2);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.prime2-btn-fill:hover,
+input.prime2-btn-fill:hover
+{
+    background-color: styles.$light-2-pr2-color;
+    cursor: pointer;
+}
+
+
+
+button.prime3-btn-fill:hover,///3
+input.prime3-btn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.prime3-btn-fill,
+input.prime3-btn-fill{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    @include mixin.button-fill(180px,styles.$light-1-pr2-color);
+    background-color: styles.$light-2-pr4-color;
+}
+
+
+
+
+/////////////5 column
+
+button.primary-btn-outline,
+input.primary-btn-outline
+{
+    @include mixin.button-fill(180px,styles.$light, solid 1px styles.$dark-1-main-color);
+    @include mixin.font(styles.$font-medium,14px,styles.$pr-main-color);
+    text-transform: capitalize;
+}
+
+button.primary-btn-outline:hover,
+input.primary-btn-outline:hover
+{
+    background-color: styles.$light-2-main-color;
+    cursor: pointer;
+    border: none;
+    color:styles.$light;
+}
+
+
+button.primary2-btn-outline,///2
+input.primary2-btn-outline
+{
+    @include mixin.button-fill(180px,styles.$light-2-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.primary2-btn-outline:hover,
+input.primary2-btn-outline:hover
+{
+    background-color: styles.$light-3-main-color;
+    cursor: pointer;
+}
+
+
+
+button.primary3-btn-outline:hover,
+input.primary3-btn-outline:hover
+{
+    cursor:not-allowed;
+}
+button.primary3-btn-outline,
+input.primary3-btn-outline
+{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    @include mixin.button-fill(180px,rgb(223, 223, 223));
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button.order-buttn-fill,////1
+input.order-buttn-fill
+{
+    @include mixin.button-fill(150px,styles.$pr-color-2);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    text-transform: uppercase;
+}
+
+button.order-buttn-fill:hover,
+input.order-buttn-fill:hover
+{
+    background-color: styles.$light-1-pr2-color;
+    cursor: pointer;
+}
+
+
+button.order2-buttn-fill,///2
+input.order2-buttn-fill
+{
+    @include mixin.button-fill(150px,styles.$light-1-pr2-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    text-transform: uppercase;
+}
+
+button.order2-buttn-fill:hover,
+input.order2-buttn-fill:hover
+{
+    background-color: styles.$light-2-pr2-color;
+    cursor: pointer;
+}
+
+
+button.order3-buttn-fill:hover,///3
+input.order-buttn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.order3-buttn-fill,
+input.order-buttn-fill
+{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    @include mixin.button-fill(150px,styles.$light-1-pr2-color);
+    background-color: styles.$light-2-pr4-color;
+}
+
+
+
+
+
+/////////////2 COLUMN
+button.or-buttn-fill,////1
+input.or-buttn-fill
+{
+    @include mixin.button-fill(150px,styles.$pr-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.or-buttn-fill:hover,
+input.or-buttn-fill:hover
+{
+    background-color: styles.$light-1-main-color;
+    cursor: pointer;
+}
+
+
+button.or2-buttn-fill,///2
+input.or2-buttn-fill
+{
+    @include mixin.button-fill(150px,styles.$light-2-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.or2-buttn-fill:hover,
+input.or2-buttn-fill:hover
+{
+    background-color: styles.$light-3-main-color;
+    cursor: pointer;
+}
+
+
+
+button.or3-buttn-fill:hover,///3
+input.or3-buttn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.or3-buttn-fill,
+input.or3-buttn-fill{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    @include mixin.button-fill(150px,styles.$light-1-pr2-color);
+    background-color: styles.$light-2-pr4-color;
+}
+
+
+
+
+
+/////////////3 COLUMN
+button.ord-buttn-fill,////1
+input.ord-buttn-fill
+{
+    @include mixin.button-fill(150px,styles.$pr-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.ord-buttn-fill:hover,
+input.ord-buttn-fill:hover
+{
+    background-color: styles.$light-1-main-color;
+    cursor: pointer;
+}
+
+
+button.ord2-buttn-fill,///2
+input.ord2-buttn-fill
+{
+    @include mixin.button-fill(150px,styles.$light-2-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.ord2-buttn-fill:hover,
+input.ord2-buttn-fill:hover
+{
+    background-color: styles.$light-3-main-color;
+    cursor: pointer;
+}
+
+
+
+button.ord3-buttn-fill:hover,///3
+input.ord3-buttn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.ord3-buttn-fill,
+input.ord3-buttn-fill{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    @include mixin.button-fill(150px,styles.$light-1-pr2-color);
+    background-color: styles.$light-2-pr4-color;
+}
+
+
+
+
+
+/////////////4 COLUMN
+button.prime-buttn-fill,////1
+input.prime-buttn-fill
+{
+    @include mixin.button-fill(150px,styles.$light);
+    border: 1px solid styles.$pr-color-2;
+    @include mixin.font(styles.$font-semibold,14px,styles.$pr-main-color-2);
+}
+button.prime-buttn-fill:hover,
+input.prime-buttn-fill:hove5
+{
+    background-color: rgb(183, 183, 183);
+    cursor: pointer;
+}
+
+
+button.prime2-buttn-fill,///2
+input.prime2-buttn-fill
+{
+    @include mixin.button-fill(150px,styles.$pr-color-2);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.prime2-buttn-fill:hover,
+input.prime2-buttn-fill:hover
+{
+    background-color: styles.$light-2-pr2-color;
+    cursor: pointer;
+}
+
+
+
+button.prime3-buttn-fill:hover,///3
+input.prime3-buttn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.prime3-buttn-fill,
+input.prime3-buttn-fill{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    @include mixin.button-fill(150px,styles.$light-1-pr2-color);
+    background-color: styles.$light-2-pr4-color;
+}
+
+
+
+
+/////////////5 column
+
+button.primary-buttn-outline,
+input.primary-buttn-outline
+{
+    @include mixin.button-fill(150px,styles.$light, solid 1px styles.$dark-1-main-color);
+    @include mixin.font(styles.$font-medium,14px,styles.$pr-main-color);
+    text-transform: capitalize;
+}ut
+
+button.primary-buttn-outline:hover,
+input.primary-buttn-outline:hover
+{
+    background-color: styles.$light-2-main-color;
+    cursor: pointer;
+    border: none;
+    color:styles.$light;
+}
+
+
+button.primary2-buttn-outline,///2
+input.primary2-buttn-outline
+{
+    @include mixin.button-fill(150px,styles.$light-2-main-color);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+}
+
+button.primary2-buttn-outline:hover,
+input.primary2-buttn-outline:hover
+{
+    background-color: styles.$light-3-main-color;
+    cursor: pointer;
+}
+
+
+
+button.primary3-buttn-outline:hover,
+input.primary3-buttn-outline:hover
+{
+    cursor:not-allowed;
+}
+button.primary3-buttn-outline,
+input.primary3-buttn-outline
+{
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    @include mixin.button-fill(150px,rgb(223, 223, 223));
+    border: none;
+}

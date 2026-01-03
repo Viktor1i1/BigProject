@@ -1,0 +1,41 @@
+@mixin font($font,$size,$color)///функція 1(шрифти,завдання 2)
+{
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+}
+//@include mixin.font(styles.$font-regular,13px,styles.$color-grey-text);
+@function percent($width,$offset){///відступи при адаптації 
+    @return calc($offset/$width * 100%);
+}
+
+@mixin themes($lighten:true)//тема світла або тема в заежності від вибору користувача
+{
+    @if $lighten{
+        background-color: lightpink;
+        color:black;
+    }
+    @else{
+        background-color: #000;
+        color:#fff;
+    }
+}
+
+%border{//функція для певних налаштувань для якогось h1 аьо тд
+    border-style: solid;
+    border-color:green;
+    border-width: 3px;
+    padding: percent(1170,100);
+}
+
+
+
+
+
+@mixin button-fill($width, $bg, $border:none, $height:40px)///для кнопок
+{
+    width: $width;
+    background-color: $bg;
+    height: $height;
+    border: $border;
+}

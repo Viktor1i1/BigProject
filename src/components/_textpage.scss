@@ -1,0 +1,136 @@
+@use "/src/components/mixin" as mixin;
+@use "/src/components/variables" as styles;
+
+@use "/src/components/buttons";
+.container-big{
+    .container-left{
+        .container-1{
+            h6{
+                @include mixin.font(styles.$font-medium,30px,black);
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            p{
+                @include mixin.font(styles.$font-medium,15px,#585858);
+            }
+            .p{
+                @include mixin.font(styles.$font-regular,12px,styles.$color-grey-text);
+            }
+        }
+        .container-2{
+            display: grid;
+            grid-template-columns: repeat(2,300px);
+            grid-column-gap: 60px;
+            margin-top: 30px;
+            .box1{
+                .box{
+                display: grid;
+                grid-template-columns: 10px 280px;
+                grid-column-gap: 15px;
+                height: 30px;
+                    .plane{
+                        margin-top: 7px;
+                        width: 14px;
+                        height: 14px;
+                        background-color: styles.$pr-main-color;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        i{
+                            font-size: 8px;
+                            margin-left: 2px;
+                            color: styles.$light;
+                        }
+                    }
+                    div{
+                        p{
+                            @include mixin.font(styles.$font-medium,12px,styles.$color-grey-text);
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+            .box2{
+                .box{
+                display: grid;
+                grid-template-columns: 10px 280px;
+                grid-column-gap: 15px;
+                height: 30px;
+                    .plane{
+                        margin-top: 7px;
+                        width: 10px;
+                        height: 10px;
+                        display: flex;
+                        align-items: center;
+                        border: red solid 0.2px;
+                        i{
+                            font-size: 12px;
+                            margin-left: 2px;
+                            position: relative;
+                            margin-top: -5px;
+                            color: red;
+                        }
+                    }
+                    div{
+                        p{
+                            @include mixin.font(styles.$font-medium,12px,styles.$color-grey-text);
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .container-3{
+            margin-top: 20px;
+            h6{
+                @include mixin.font(styles.$font-medium,24px,black);
+                margin-bottom: 15px;
+            }
+            p{
+                @include mixin.font(styles.$font-regular,12px,styles.$color-grey-text);
+                margin-bottom: 20px;
+            }
+            .p{
+                background-color:styles.$light-3-main-color;
+                margin-bottom: 20px;
+                p{
+                    margin-left: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-right: 8px;
+                    line-height: 24px;
+                    @include mixin.font(styles.$font-regular,14px,styles.$dark-1-main-color);
+                }
+            }
+        }
+        .container-4{
+            margin-top: 30px;
+            h6{
+                @include mixin.font(styles.$font-medium,19px,black);
+            }
+            p{
+                @include mixin.font(styles.$font-regular,12px,styles.$color-grey-text);
+                margin-top: 16px;
+            }
+            .h6{
+                @include mixin.font(styles.$font-medium,15px,black);
+            }
+        }
+        .container-5{
+            h6{
+                @include mixin.font(styles.$font-medium,13px,black);
+            }
+            .box{
+                display: grid;
+                grid-template-columns: repeat(2,310px);
+                grid-column-gap: 40px;
+                margin-top: 20px;
+                div{
+                    p{
+                        @include mixin.font(styles.$font-regular,12px,styles.$color-grey-text);
+                    }
+                }
+            }
+        }
+    }
+}

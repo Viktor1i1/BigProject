@@ -1,0 +1,701 @@
+@use "/src/components/mixin" as mixin;
+@use "/src/components/variables" as styles;
+
+@use "/src/components/buttons";
+.brd{
+    background-color: #e6f7fe;
+    .bac-image{
+        background: url(/src/img/img_cloud.png);
+        .con{
+            margin-left: 320px;
+            padding-top: 90px;
+            h6{
+                @include mixin.font(styles.$font-poppins,28px,black);
+                margin-bottom: 20px;
+            }
+            p{
+                @include mixin.font(styles.$font-poppins,10px,styles.$color-grey-text);
+                text-transform: uppercase;
+                word-spacing: 7px;
+                padding-bottom: 120px;
+                span{
+                    word-spacing: 2px;
+                    color: black;
+                }
+                a{
+                    text-decoration: none;
+                    @include mixin.font(styles.$font-poppins,10px,styles.$color-grey-text);
+                }
+            }
+        }
+    }
+}
+.container-big{
+    margin-left: 310px;
+    display: grid;
+    grid-template-columns: 680px 220px;
+    grid-column-gap: 20px;
+    .container-left{
+        .cont-1{
+            table{
+                tr{
+                    td{
+                        color: #757575;
+                        width: 100px;
+                        padding-left: 30px;
+                        height: 50px;
+                        @include mixin.font(styles.$font-regular,13px,styles.$color-grey-text);
+                        border-bottom: #d7d9db solid ;
+                    }
+                    .orange{
+                        color: styles.$pr-main-color-2 ;
+                        border-bottom: styles.$pr-main-color-2 solid ;
+                    }
+                    .big{
+                        width: 270px;
+                    }
+                    .img-td{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        .cont-2{
+            margin-bottom: 60px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 40px 580px;
+            grid-column-gap: 40px;
+            .box-1{
+                margin-top: 10px;
+                margin-left: 10px;
+                div{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: styles.$light;
+                    background-color: #0287c3;
+                    border:#0287c3 solid ;
+                    margin-bottom: 18px;
+                    .second{
+                        font-size: 13px;
+                    }
+                }
+                
+                .boxes-4{
+                    margin-bottom: 155px;
+                }
+                .boxes-5,
+                .boxes-6{
+                    background-color: styles.$light;
+                    border:#0287c3 solid 0.3px ;
+                    img{
+                        width: 12px;
+                    }
+                }
+            }
+            .box-2{
+                h6{
+                    @include mixin.font(styles.$font-medium,30px,black);
+                }
+                img{
+                    width: 580px;
+                }
+                .p1{
+                    @include mixin.font(styles.$font-medium,11px,styles.$color-grey-text);
+                    margin-bottom: 23px;
+                }
+                .p2{
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                    @include mixin.font(styles.$font-regular,11px,styles.$color-grey-text);
+                }
+                .p3{
+                    @include mixin.font(styles.$font-medium,12px,styles.$pr-color-2);
+                }
+            }
+        }
+        .cont-3{
+            margin-bottom: 60px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 40px 580px;
+            grid-column-gap: 40px;
+            .box-1{
+                margin-top: 10px;
+                margin-left: 10px;
+                div{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: styles.$light;
+                    background-color: #0287c3;
+                    border:#0287c3 solid ;
+                    margin-bottom: 18px;
+                }
+                .boxes-4{
+                    margin-bottom: 155px;
+                }
+                .boxes-5,
+                .boxes-6{
+                    background-color: styles.$light;
+                    border:#0287c3 solid 0.3px ;
+                    img{
+                        width: 12px;
+                    }
+                }
+            }
+            .box-2{
+                h6{
+                    @include mixin.font(styles.$font-medium,30px,black);
+                }
+                img{
+                    width: 580px;
+                }
+                .p1{
+                    @include mixin.font(styles.$font-medium,11px,styles.$color-grey-text);
+                    margin-bottom: 23px;
+                }
+                .p2{
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                    @include mixin.font(styles.$font-regular,11px,styles.$color-grey-text);
+                }
+                .p3{
+                    @include mixin.font(styles.$font-medium,12px,styles.$pr-color-2);
+                }
+            }
+        }
+        .cont-4{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 40px 580px;
+            grid-column-gap: 40px;
+            .box-1{
+                margin-top: 10px;
+                margin-left: 10px;
+                div{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: styles.$light;
+                    background-color: #0287c3;
+                    border:#0287c3 solid ;
+                    margin-bottom: 18px;
+                }
+                .boxes-4{
+                    margin-bottom: 155px;
+                }
+                .boxes-5,
+                .boxes-6{
+                    background-color: styles.$light;
+                    border:#0287c3 solid 0.3px ;
+                    img{
+                        width: 12px;
+                    }
+                }
+            }
+            .box-2{
+                margin-top: 3px;
+                h6{
+                    @include mixin.font(styles.$font-medium,30px,black);
+                }
+                img{
+                    width: 580px;
+                }
+                .p1{
+                    @include mixin.font(styles.$font-medium,11px,styles.$color-grey-text);
+                    margin-bottom: 23px;
+                }
+                .p2{
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                    @include mixin.font(styles.$font-regular,11px,styles.$color-grey-text);
+                }
+                .p3{
+                    @include mixin.font(styles.$font-medium,12px,styles.$pr-color-2);
+                }
+                hr{
+                    color: styles.$pr-main-color;
+                    height: 2px;    
+                    background: #0287c3; 
+                    border: none; 
+                }
+            }
+        }
+        .cont-5{
+            margin-left: 70px;
+            padding-bottom: 100px;
+            .pagination{
+                display:flex;
+                align-items:center;
+                gap:14px;
+                font-family: Arial, sans-serif;
+            }
+            .pagination_link{
+                width:15px;
+                height:15px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-decoration:none;
+                color:#9aa0a6;              
+                border-radius: 50%;
+                font-size:14px;
+                line-height:1;
+            }
+            .pagination_link:hover{
+                background:#f2f4f7;
+                color:#6b7280;
+            }
+            .pagination_link.is-active{
+                width: 25px;
+                height: 25px;
+                background:#1da1f2; 
+                color:#fff;
+            }
+            .pagination_arrow{
+                width:34px;
+                height:34px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-decoration:none;
+                color:#b0b7c3;
+                font-size:22px;
+                border-radius:50%;
+            }
+            .pagination_arrow:hover{
+                background:#f2f4f7;
+                color:#6b7280;
+            }
+        }
+    }
+    .container-right{
+        .cont-1{
+            margin-top: 27px;
+            position: relative;
+            width: 220px;
+            .search-icon {
+                position: absolute;
+                right: 12px;
+                top: 50%;
+                transform: translateY(-60%);
+                color: #999;
+                pointer-events: none;
+            }
+        }
+        .cont-1 input {
+            width: 220px;
+            height: 36px;
+            padding: 0 40px 0 14px;
+            font-size: 14px;
+            line-height: 36px;
+            background-color: #f6f9f9;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .cont-2{
+            h6{
+                @include mixin.font(styles.$font-semibold,13px,styles.$pr-main-color);
+                text-transform: uppercase;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+            .box-1{
+                border-top: solid 1.5px styles.$pr-main-color;
+            }
+            .box-2,
+            .box-3,
+            .box-4{
+                border-top: 1px solid styles.$light-2-main-color;
+
+            }
+            .box{
+                height: 40px;
+                display: grid;
+                grid-template-columns: 10px 190px;
+                grid-column-gap: 16px;
+                background-color: styles.$light-3-main-color ;
+                padding-left: 8px ;
+                display: flex;
+                align-items: center;
+                .triangle-right{
+                    width: 0px;
+                    height: 0px;
+                    border-top: 4px solid transparent;
+                    border-left: 5px solid styles.$pr-main-color;
+                    border-bottom: 4px solid transparent;
+                }
+                .p{
+                    display: flex;
+                    align-items: center;
+                    p{
+                        @include mixin.font(styles.$font-regular,13px,styles.$color-grey-text);
+                        text-transform: uppercase;
+                        margin: 0;
+                    }
+                }
+            }
+        }    
+        .cont-3{
+            h6{
+                @include mixin.font(styles.$font-semibold,13px,styles.$pr-main-color);
+                text-transform: uppercase;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            .box-1{
+                border-top: solid 1.5px styles.$pr-main-color;
+            }
+            .box-2,
+            .box-3,
+            .box-4{
+                border-top: 1px solid styles.$light-2-main-color;
+
+            }
+            .box{
+                height: 38px;
+                background-color: styles.$light-3-main-color ;
+                display: flex;
+                align-items: center;
+                padding-left: 15px;
+                .p{
+                    p{
+                        @include mixin.font(styles.$font-regular,13px,styles.$color-grey-text);
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .cont-4{
+            h6{
+                @include mixin.font(styles.$font-semibold,13px,styles.$pr-main-color);
+                text-transform: uppercase;
+                margin-top: 36px;
+                margin-bottom: 15px;
+            }
+            .box{
+                img{
+                    width: 220px;
+                }
+                .h6{
+                    @include mixin.font(styles.$font-medium,14px,black);
+                    margin-top: 15px;
+                    text-transform: none;
+                    margin-bottom: 7px
+                }
+                p{
+                    @include mixin.font(styles.$font-medium,11px,styles.$color-grey-text);
+                }
+                hr{
+                    border: none;
+                    height: 2px;
+                    background-color: styles.$pr-main-color ;
+                }
+            }
+        }
+        .cont-5{
+            h6{
+                margin-top: 30px;
+                @include mixin.font(styles.$font-semibold,14px,styles.$pr-main-color);
+            }
+            hr{
+                border: none;
+                height: 2px;
+                background-color: styles.$pr-main-color ;
+            }
+            .row1{
+                margin-bottom: 20px;
+                display: grid;
+                grid-template-columns: 100px 110px;
+                .box1{
+                    img{
+                        width: 80px;
+                    }
+                }
+                .box2{
+                    width: 110px;
+                    img{
+                        width: 105px;
+                    }
+
+                }
+            }
+            .row2{
+                display: grid;
+                grid-template-columns: 40px 60px 80px;
+                grid-column-gap: 15px;
+                margin-bottom: 17px;
+                .box3{
+                    img{
+                        width: 35px;
+                    }
+                }
+                .box4{
+                    img{
+                        width: 60px;
+                    }
+
+                }
+                .box5{
+                    img{
+                        width: 80px;
+                    }
+                }
+            }
+            .row3{
+                display: grid;
+                grid-template-columns: 100px 110px;
+                margin-bottom: 20px;
+                .box6{
+                    img{
+                        width: 80px;
+                    }
+                }
+            }
+            .row4{
+                display: grid;
+                grid-template-columns: 70px 70px;
+                grid-column-gap: 20px;
+                .box8{
+                    img{
+                        width: 60px;
+                    }
+                }
+                .box9{
+                    img{
+                        width: 60px;
+                    }
+                }
+            }
+        }
+        .cont-6{
+            margin-top: 35px;
+            padding-top: 10px;
+            height: 310px;
+            background-color: styles.$pr-main-color;
+            .text{
+                margin:20px;
+                background-color: styles.$dark-1-main-color ;
+                border-radius: 5%;
+                border:2px dashed styles.$light;
+                p{
+                    padding-top: 27px;
+                    padding-left: 23px;
+                    margin-bottom: 10px;
+                    @include mixin.font(styles.$font-poppins,14px,styles.$light);
+                }
+                h6{
+                    padding-left: 30px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    @include mixin.font(styles.$font-poppins,33px,styles.$pr-color-3);
+                    span{
+                        @include mixin.font(styles.$font-poppins,23px,styles.$pr-color-3);
+                        
+                    }
+                }
+                .p{
+                    padding-top: 0;
+                    padding-left: 27px;
+                    @include mixin.font(styles.$font-poppins,13px,styles.$light);
+                    text-transform: uppercase;
+                    padding-bottom: 30px;
+                }
+            }
+            .img{
+                position: relative;
+                margin-top: -198px;
+                margin-left: -22px;
+                margin-bottom: 0;
+                img{
+                    width: 214px;
+                }
+            }
+        }
+        .cont-7{
+            h6{
+                @include mixin.font(styles.$font-semibold,13px,styles.$pr-main-color);
+                margin-top: 26px;
+            }
+            hr{
+                color: styles.$pr-main-color;
+                height: 2.5px;    
+                background: #0287c3; 
+                border: none; 
+            }
+            .box{
+                display: grid;
+                grid-template-columns: 10px 190px;
+                grid-column-gap: 15px;
+                height: 30px;
+                .plane{
+                    i{
+                        font-size: 10px;
+                        color: styles.$pr-main-color;
+                    }
+                }
+                div{
+                    p{
+                        @include mixin.font(styles.$font-regular,12px,black);
+                        margin-top: 5px;
+                    }
+                }
+            }
+            button.but,////1
+            input.but
+            {
+                @include mixin.button-fill(210px,styles.$dark-1-main-color);
+                @include mixin.font(styles.$font-semibold,14px,styles.$light);
+                text-transform: uppercase;
+                margin-top: 24px;
+                height: 35px;
+                border-radius: 2%;
+            }
+
+            button.but:hover,
+            input.but:hover
+            {
+                background-color: styles.$pr-main-color;
+                cursor: pointer;
+            }
+        }
+        .cont-8{
+            margin-top: 47px;
+            h6{
+                @include mixin.font(styles.$font-semibold,13px,styles.$pr-main-color);
+                margin-top: 26px;
+                text-transform: uppercase;
+            }
+            hr{
+                color: styles.$pr-main-color;
+                height: 2.5px;    
+                background: #0287c3; 
+                border: none; 
+            }
+            .box{
+                display: grid;
+                grid-template-columns: 10px 190px;
+                grid-column-gap: 15px;
+                height: 30px;
+                .plane{
+                    margin-top: 7px;
+                    width: 14px;
+                    height: 14px;
+                    background-color: styles.$pr-main-color;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    i{
+                        font-size: 8px;
+                        margin-left: 2px;
+                        color: styles.$light;
+                    }
+                }
+                div{
+                    p{
+                        @include mixin.font(styles.$font-light,12px,black);
+                        margin-top: 5px;
+                    }
+                }
+            }
+            button.but,
+            input.but
+            {
+                @include mixin.button-fill(210px,styles.$dark-1-main-color);
+                @include mixin.font(styles.$font-semibold,14px,styles.$light);
+                text-transform: uppercase;
+                margin-top: 24px;
+                height: 35px;
+                border-radius: 2%;
+            }
+
+            button.but:hover,
+            input.but:hover
+            {
+                background-color: styles.$pr-main-color;
+                cursor: pointer;
+            }
+        }
+        .cont-9{
+            margin-top: 45px;
+            h6{
+                @include mixin.font(styles.$font-semibold,13px,styles.$pr-main-color);
+                margin-top: 26px;
+                text-transform: uppercase;
+            }
+            hr{
+                color: styles.$pr-main-color;
+                height: 2.5px;    
+                background: #0287c3; 
+                border: none; 
+            }
+            .box{
+                margin-bottom: 20px;
+                display: grid;
+                grid-template-columns: 60px 140px ;
+                grid-column-gap: 15px;
+                .circle{
+                    width: 55px;
+                    height: 55px;
+                    background-color: styles.$pr-main-color;
+                    border-radius: 50%;
+                    text-align: center;
+                    @include mixin.font(styles.$font-poppins,15px,styles.$pr-color-3);
+                    padding-top: 7px;
+                }
+                .circle-orange{
+                    color: styles.$light;
+                    background-color: styles.$pr-color-2;
+                }
+                .text{
+                    
+                    border-bottom: #d7d9db solid 0.2px;
+                    p{
+                        @include mixin.font(styles.$font-medium,11px,styles.$color-grey-text);
+                        margin-bottom: 0;
+                        margin-top: 5px;
+                    }
+                    h6{
+                        margin-top: 0;
+                        @include mixin.font(styles.$font-semibold,17px,black);
+                    }
+                }
+                
+            }
+            .box1{
+                margin-top: 20px;
+            }
+            button.but,
+            input.but
+            {
+                @include mixin.button-fill(210px,styles.$dark-1-main-color);
+                @include mixin.font(styles.$font-semibold,14px,styles.$light);
+                text-transform: uppercase;
+                margin-top: 20px;
+                height: 35px;
+                border-radius: 2%;
+            }
+
+            button.but:hover,
+            input.but:hover
+            {
+                background-color: styles.$pr-main-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
